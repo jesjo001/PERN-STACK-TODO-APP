@@ -36,7 +36,7 @@ app.get("/todos", async (req, res) => {
 
         res.json(allTodos.rows);
     } catch (error) {
-        
+        console.log(error)
     }
 })
 
@@ -50,7 +50,7 @@ app.get("/todos/:id", async (req, res) => {
 
         res.json(allTodos.rows[0]);
     } catch (error) {
-
+        console.log(error)
     }
 })
 
@@ -67,7 +67,7 @@ app.put("/todos/:id", async (req, res) => {
 
         res.json("Todo was updated");
     } catch (error) {
-
+        console.log(error)
     }
 })
 
